@@ -15,7 +15,7 @@ const Service = ({service,loading}) => {
        
         <div className=''>
            <div className='border'>
-           <div className='flex justify-between gap-40 items-center py-6 rounded-lg bg-base-100'>
+           <div className='grid grid-cols-5 gap-20 py-6 rounded-lg bg-base-100'>
             {company.name}
             <p className='place-items-center'>
                 <span className='font-bold'>CONTACT</span><br />
@@ -48,7 +48,7 @@ const Service = ({service,loading}) => {
                     <h1 className='font-bold'>Description:</h1>
                     {email}
                    <div className=''>
-                   <div className='flex justify-start mt-2 gap-24'>
+                   <div className='grid grid-cols-4 gap-10'>
                         <p>
                             <span className='font-bold'>Contact Person</span>: <br />
                             {username}
@@ -60,27 +60,27 @@ const Service = ({service,loading}) => {
                             {address.city}
                         </p>
                     </div>
-                    <div className='flex justify-start mt-2  gap-24'>
+                    <div className='grid grid-cols-4 gap-10'>
                         <p>
                             <span className='font-bold'>Designation:</span><br />
                             {username}
                         </p>
-                        <p className='ml-5'>
+                        <p className=''>
                             <span className='font-bold'>City</span> <br /> 
                             {address.city}
                         </p>
                     </div>
-                    <div className='flex justify-start mt-2  gap-20'>
+                    <div className='grid grid-cols-4 gap-10'>
                         <p>
                             <span className='font-bold'>Emails:</span><br />
                             {email}
                         </p>
-                        <p className='ml-2'>
+                        <p className=''>
                             <span className='font-bold'>State</span> <br /> 
                             {address.city}
                         </p>
                     </div>
-                    <div className='flex justify-start mt-2  gap-10'>
+                    <div className='grid grid-cols-4 gap-10'>
                         <p>
                             <span className='font-bold'>Phone:</span><br />
                             {phone}
@@ -91,10 +91,6 @@ const Service = ({service,loading}) => {
                         </p>
                     </div>
                    </div>
-
-
-
-
 
                 </div> :null
             }
